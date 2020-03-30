@@ -8,7 +8,8 @@ func SetupRouter() *gin.Engine {
 	r := gin.Default()
 	r.GET("/ping", Ping)
 
-	r.GET("/home", GetDataForHomepage)
+	//r.GET("/home", GetDataForHomepage)
+	r.Static("/static", "./static")
 
 	return r
 }
