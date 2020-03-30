@@ -10,6 +10,7 @@ func SetupRouter() *gin.Engine {
 
 	//r.GET("/home", GetDataForHomepage)
 	r.Static("/static", "./static")
+	r.StaticFile("/privacy", "./static/privacy_policy.html")
 
 	return r
 }
