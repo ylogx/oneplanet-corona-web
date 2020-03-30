@@ -8,7 +8,7 @@ func SetupRouter() *gin.Engine {
 	r := gin.Default()
 	r.GET("/ping", Ping)
 
-	r.Static("/static", "./static")
+	//r.Static("/static", "./static")
 	r.StaticFile("/privacy", "./static/privacy_policy.html")
 
 	return r
