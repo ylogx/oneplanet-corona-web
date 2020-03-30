@@ -1,0 +1,15 @@
+# Temp Data
+data/db
+
+# Binary
+app/app
+app/tmp
+*.amd64
+
+# Prod Info
+.env-prod*
+app.yaml
+
+# IDEA
+.idea/
+*.iml
